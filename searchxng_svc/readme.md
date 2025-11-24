@@ -1,13 +1,4 @@
-Below is a **clean, production-ready README.md** for your multi-service AI application.
-It assumes your repo contains:
 
-* `frontend_svc/`
-* `backend_svc/`
-* `searchxng_svc/`
-* `docker-compose.yml`
-* Your custom tools, prompts, and LLM pipeline.
-
-You can copy/paste this directly as **README.md** at the project root.
 
 ---
 
