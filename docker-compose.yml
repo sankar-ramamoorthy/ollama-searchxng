@@ -1,0 +1,38 @@
+services:
+  searchxng_svc:
+    build: ./searchxng_svc
+    volumes:
+      - ./searchxng_svc/settings.yml:/etc/searxng/settings.yml
+      - ./searchxng_svc/limiter.toml:/etc/searxng/limiter.toml
+      - searxng_cache:/var/cache/searxng
+    ports:
+      - "8181:8080"
+  
+    networks:
+      - llm_network
+
+  backend_svc:
+    build: ./backend_svc
+    container_name: backend_svc
+    ports:
+      - "8000:8000"
+    networks:
+      - llm_network
+    depends_on:
+      - searchxng_svc
+
+  frontend_svc:
+    build: ./frontend_svc
+    container_name: frontend_svc
+    ports:
+      - "7860:7860"
+    networks:
+      - llm_network
+    depends_on:
+      - backend_svc
+
+networks:
+  llm_network:
+
+volumes:
+  searxng_cache:

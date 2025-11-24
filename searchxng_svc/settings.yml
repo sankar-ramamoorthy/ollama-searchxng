@@ -1,0 +1,34 @@
+server:
+  limiter: false
+  secret_key: "KNVP1nRBAAuGcm3BtKs4lVVxomF9VAeo6JqxEb_T_Uk"  # Override via env var SEARXNG_SECRET
+  bind_address: "0.0.0.0"
+  bind_port: 8080
+  allowed_networks:
+    - 0.0.0.0/0  #public_instance: false
+botdetection:
+  enabled: false
+
+logging:
+  level: INFO
+
+search:
+  safe_search: 2
+  autocomplete: "duckduckgo"
+
+ui:
+  theme: "simple"
+
+
+use_default_settings:
+    engines:
+       keep_only:
+         - duckduckgo
+engines:
+  - name: duckduckgo
+
+search:
+  formats:
+    - html
+    - json
+    - rss
+    - text

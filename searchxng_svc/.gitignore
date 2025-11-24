@@ -1,0 +1,10 @@
+# Ignore Python cache files if any
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Docker cache files
+*.log
+
+# Ignore Docker volumes (optional)
+searxng_cache/

@@ -1,0 +1,17 @@
+{
+  "type": "function",
+  "function": {
+    "name": "searchxng",
+    "description": "When real-time access to current events is needed, This tool searches the web for current information using the SearXNG service.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query to run on SearXNG."
+        }
+      },
+      "required": ["query"]
+    }
+  }
+}

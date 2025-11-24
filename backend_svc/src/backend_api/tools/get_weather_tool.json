@@ -1,0 +1,17 @@
+{
+  "type": "function",
+  "function": {
+    "name": "get_weather",
+    "description": "Returns weather information for a given location. This tool will internally use the web search via searchxng-svc.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "location": {
+          "type": "string",
+          "description": "Location for which to get the weather (city, country, etc.)"
+        }
+      },
+      "required": ["location"]
+    }
+  }
+}

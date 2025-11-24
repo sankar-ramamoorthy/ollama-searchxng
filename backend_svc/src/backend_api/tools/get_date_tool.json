@@ -1,0 +1,13 @@
+{
+    "type": "function",
+    "function": {
+        "name": "get_date",
+        "description": "When Today's date is needed, This tool gets the date.",
+        "properties": {
+            "today": {
+                "type": "string",
+                "description": "The current date."
+            }
+        }
+    }
+}

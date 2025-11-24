@@ -1,0 +1,9 @@
+[project]
+name = "frontend-svc"
+version = "0.1.0"
+description = "Gradio frontend service for chat UI"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=3.39.0",
+    "requests>=2.32.3"
+]
