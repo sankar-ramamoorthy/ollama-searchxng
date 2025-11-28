@@ -18,9 +18,9 @@ logger = logging.getLogger("backend_api")
 # ---------------------------------------------------------
 # Import tool functions
 # ---------------------------------------------------------
-from src.backend_api.get_weather import get_weather
-from src.backend_api.searchxng import searchxng
-from src.backend_api.get_date import get_date
+from backend_svc.src.backend_api.tools.get_weather import get_weather
+from backend_svc.src.backend_api.tools.searchxng import searchxng
+from backend_svc.src.backend_api.tools.get_date import get_date
 
 # ---------------------------------------------------------
 # Load tool schemas

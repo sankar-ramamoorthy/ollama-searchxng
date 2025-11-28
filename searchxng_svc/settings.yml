@@ -19,12 +19,14 @@ ui:
   theme: "simple"
 
 
-use_default_settings:
-    engines:
-       keep_only:
-         - duckduckgo
+use_default_settings: true
+
+# No keep_only here means all default engines are enabled
+
 engines:
   - name: duckduckgo
+    disabled: false
+  # Add other engines here if you want custom overrides (optional)
 
 search:
   formats:
